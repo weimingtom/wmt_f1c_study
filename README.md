@@ -24,3 +24,15 @@ int main()
 	return 0;
 }
 ```
+
+## Flash Linux firmware, and copy file to file system  
+* mpi-r-tools.zip, zadig.exe, Device, Create New Device", 1F3A EFE8  
+* 1F3A 1010  
+* 不插TF卡，按住BOOT按钮后插入USB线；或者先插入USB，保持按住BOOT按钮姿势时短按下RST键  
+* from-fel-to-dfu.bat  
+* dfu-util.exe -R -a all -D output\images\sysimage-nand.img  
+* reset后，OTG线进入U盘模式  
+* Copy elf file (a.out) to storage driver (mangopi-r3), copy to /root  
+* Plug USB TTL, use putty to get tty console.   
+* chmod +x a.out && ./a.out  
+
