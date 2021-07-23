@@ -32,7 +32,7 @@ int main()
 * no TF, hold press BOOT and press RST    
 * from-fel-to-dfu.bat  
 * dfu-util.exe -R -a all -D output\images\sysimage-nand.img (use sysimage-nand-120mb.zip)    
-* reset, and connect board's USB OTG to PC, wait a minute, get a storage driver (mangopi-r3)     
+* reset, and connect board's USB OTG to PC, wait a minute, get a storage driver (named Widora MangoPi R3)     
 * Copy elf file (a.out) to storage driver (mangopi-r3), copy to /root  
 * Connect board's USB TTL to PC, use putty to get tty console.   
 * chmod +x a.out && ./a.out  
