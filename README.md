@@ -14,3 +14,13 @@ arm-linux-gcc -mcpu=arm926ej-s a.c
 same as: arm-linux-gcc -mcpu=arm926ej-s a.c -static  
 same as: arm-linux-gcc a.c  
 same as: arm-linux-gcc a.c -static  
+* hello program  
+```
+#include <stdio.h>
+
+int main()
+{
+	printf("Hello, world!\n");
+	return 0;
+}
+```
