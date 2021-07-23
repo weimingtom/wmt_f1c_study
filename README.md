@@ -25,7 +25,7 @@ int main()
 }
 ```
 
-## Flash Linux firmware, and copy file to file system  
+## Flash Linux firmware, and copy file a.out to file system  
 * https://mangopi.org/f1c_flashrom  
 * mpi-r-tools.zip, zadig-2.5.exe, Device, Create New Device, Allwinner FEL Device, USB ID: 1F3A EFE8, Install Driver    
 * mpi-r-tools.zip, zadig-2.5.exe, Device, Create New Device, Allwinner DFU Device, USB ID: 1F3A 1010, Install Driver    
