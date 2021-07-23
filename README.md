@@ -5,7 +5,7 @@ My F1C200s and F1C100s study
 Linux mangopi-r3 5.4.92 #1 Tue May 11 10:39:00 CST 2021 armv5tejl GNU/Linux  
 search baidupan, sysimage-nand-120mb.zip (behide lcpi_factory.rar)  
 
-## Build hello program on Linux mangopi-r3 5.4.92  
+## Build hello program for Linux mangopi-r3 5.4.92, get a.out    
 * search baidupan, armv5-eabi--glibc--stable-2020.08-1.tar.bz2  
 https://toolchains.bootlin.com  
 select armv5eabi and glibc  
