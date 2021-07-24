@@ -37,3 +37,6 @@ int main()
 * Connect board's USB TTL to PC, use putty to get tty console.   
 * chmod +x a.out && ./a.out  
 
+## 【荔枝派Nano】F1C100S的串口  
+https://www.bilibili.com/read/cv9912248/  
+https://gitee.com/cai_xl/F1C100S_examples  
