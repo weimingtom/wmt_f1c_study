@@ -42,3 +42,18 @@ https://www.bilibili.com/read/cv9912248/
 https://gitee.com/cai_xl/F1C100S_examples  
 
 ## fb-test, fbset  
+
+## ARM9/ARM11裸机开发笔记1之MDK开发环境和点亮LED  
+http://www.openedv.com/forum.php?mod=viewthread&tid=45055  
+
+## F1C100s_with_Keil_RTX4_emWin5  
+https://gitee.com/xuyao2020/F1C100s_with_Keil_RTX4_emWin5  
+https://www.amobbs.com/thread-5708471-1-1.html  
+https://www.amobbs.com/thread-5731101-1-1.html  
+
+## f1c200s(tiny200) linux+emwin稳定运行  
+https://whycan.com/t_4739.html  
+https://github.com/xiaofengvskuye/f1c200s_emwin/blob/master/Sample/SimpleDemo/main.c  
+
+## 荔枝派Nano使用gcc-linaro-7.2.1进行交叉编译得到的可执行文件，一运行就"segmentation fault"  
+https://whycan.com/t_3265.html  
