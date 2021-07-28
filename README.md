@@ -51,6 +51,13 @@ http://www.openedv.com/forum.php?mod=viewthread&tid=45055
 https://gitee.com/xuyao2020/F1C100s_with_Keil_RTX4_emWin5  
 https://www.amobbs.com/thread-5708471-1-1.html  
 https://www.amobbs.com/thread-5731101-1-1.html  
+```
+--c99  
+E:\Keil_v4\ARM\Segger\emWin\Include  
+E:\Keil_v4\ARM\Segger\emWin\Lib\GUI_ARM_L.lib  
+```
+F1C100s_with_Keil_RTX4_emWin5_spl_v1.rar  
+FIXME: Only ddr running (program lost after resetting), not available for nand flash  
 
 ## f1c200s(tiny200) linux+emwin稳定运行  
 https://whycan.com/t_4739.html  
