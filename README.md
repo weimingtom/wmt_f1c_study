@@ -70,6 +70,7 @@ https://whycan.com/t_3265.html
 https://github.com/vvhh2002/f1c100s_rt-thread  
 https://github.com/vvhh2002/lv7_rtthread_f1c100s  
 https://github.com/VeiLiang/BoloRTT  
+https://whycan.com/p_33590.html  
 
 ## F1C100s_projects  
 https://github.com/nminaylov/F1C100s_projects  
