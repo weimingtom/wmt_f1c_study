@@ -65,3 +65,11 @@ https://github.com/xiaofengvskuye/f1c200s_emwin/blob/master/Sample/SimpleDemo/ma
 
 ## 荔枝派Nano使用gcc-linaro-7.2.1进行交叉编译得到的可执行文件，一运行就"segmentation fault"  
 https://whycan.com/t_3265.html  
+
+## rt-thread  
+https://github.com/vvhh2002/f1c100s_rt-thread  
+https://github.com/vvhh2002/lv7_rtthread_f1c100s  
+https://github.com/VeiLiang/BoloRTT  
+
+## F1C100s_projects  
+https://github.com/nminaylov/F1C100s_projects  
