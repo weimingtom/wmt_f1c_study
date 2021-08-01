@@ -74,3 +74,15 @@ https://whycan.com/p_33590.html
 
 ## F1C100s_projects  
 https://github.com/nminaylov/F1C100s_projects  
+
+## f1c100s, nor flash, licheepi nano, 荔枝派nano  
+我把荔枝派nano，f1c100s nor flash版烧录过程跑通了。  
+我用的开发板是荔枝派nano，不过需要做手脚，而且这个开发板出厂不支持录音，  
+如果要录音的话最好用芒果派r3，但芒果派r3的nand flash版不能用sunxi-fel直接烧录，  
+我还在想这个如何解决。关于荔枝派nano，由于出厂是无法直接烧录nor flash的（板载的w25q128），  
+需要搭额外的电路，我的做法如下，仅供参考：用一个母对公杜邦线接在GND脚上，  
+用一个导线一头弯钩接在w25q128的1脚上（最靠近芯片白色圆点的那个脚），  
+另一头接在母对公杜邦线，这两根杜邦线接在一起（通过面包板），  
+通过usb线接通开发板，即可进入FEL模式，启动后，需要马上在面包板上断开上述的两根杜邦线，  
+否则w25q128会无法片选使能。然后就可以spiflash-read和spiflash-write了，  
+可以读出官方的ROM可写入自己的ROM  
