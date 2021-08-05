@@ -86,3 +86,11 @@ https://github.com/nminaylov/F1C100s_projects
 通过usb线接通开发板，即可进入FEL模式，启动后，需要马上在面包板上断开上述的两根杜邦线，  
 否则w25q128会无法片选使能。然后就可以spiflash-read和spiflash-write了，  
 可以读出官方的ROM可写入自己的ROM  
+
+## f1c200s, nor flash (also with nand flash, but fail to run widora's mangopi nand rom), 小淘气科技  
+我购买了小淘气科技的F1C200s开发板（带nor和nand flash），没有买代码。  
+这个板相当于荔枝派nano（UART0是调试输出），但也可以兼容芒果派r3（需要改接UART1，即PA2收PA3发，才能看到调试输出）。  
+另外，虽然带有nand flash（通过跳帽来选择），但我试过无法运行芒果派r3的nand flash rom，  
+可能是因为nand flash的芯片型号不同，待考。屏幕是接屏线的，下方的排针其实是空出来，没有接到屏幕。  
+兼容800x480分辨率（我买的是这个分辨率），即可以忽略掉触摸功能和屏线，屏幕输出是不受影响的。  
+带有喇叭，在屏幕转接板的背面，可以拔掉线，或者用耳机来避免声音过大（当然一般情况下不会用到声音输出）  
