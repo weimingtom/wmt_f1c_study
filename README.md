@@ -136,3 +136,62 @@ https://github.com/xiaofengvskuye/f1c200s_emwin/blob/master/Sample/SimpleDemo/ma
 
 ## 荔枝派Nano使用gcc-linaro-7.2.1进行交叉编译得到的可执行文件，一运行就"segmentation fault"  
 https://whycan.com/t_3265.html  
+
+## （未整理的链接）  
+* https://gitee.com/LicheePiNano/F1C100S_MDK  
+https://gitee.com/LicheePiNano/F1C100s_with_Keil_RTX4_emWin5  
+https://gitee.com/LicheePiNano/lv7_rtthread_f1c100s  
+https://littlevgl.readthedocs.io/en/latest/Doc/04.MDK开发F1C100S/MDK_F1C100S.html#mdk-emwin-rtt  
+* https://whycan.com/t_1522_2.html  
+https://bitbucket.org/qq516333132/c600/src/lcd_test/  
+https://github.com/mirkerson/c600  
+* https://github.com/hcly/f1c100s  
+https://github.com/motoedy/RTX4-emWin-on-F1C100s  
+https://github.com/motoedy/minimal_f1c100s_fb_zlggui  
+https://github.com/hongxuyao/F1C100s_with_Keil_RTX4_emWin5  
+* https://github.com/armfly/H7-TOOL_STM32H7_App  
+* https://blog.csdn.net/p1279030826/article/details/112850119  
+https://github.com/Lichee-Pi/u-boot  
+* https://gitee.com/zhangheyang/f1c100s_rt-thread  
+https://gitee.com/jiang_xing/f1c100s_rt-thread  
+https://gitee.com/qq49707555/projects  
+* https://gitee.com/jxmlegend/f1c100s_u-boot  
+https://gitee.com/cai_xl/F1C100S_examples/tree/master  
+* https://steward-fu.github.io/website/mcu.htm  
+https://steward-fu.github.io/website/mcu/f1c100s/jlink_dram.htm  
+todo: download this:  
+https://github.com/steward-fu/lichee-nano/releases  
+https://www.eevblog.com/forum/projects/building-an-hmi-based-on-f1c200s-and-xboot/  
+https://steward-fu.github.io/website/mcu/f1c100s/asm_setup.htm  
+* https://oshwhub.com/LSW12315/f1c100s_copy  
+https://www.cnblogs.com/XZHDJH/articles/13607465.html  
+https://oshwhub.com/LSW12315/f1c100score_copy  
+https://h.bilibili.com/135640708  
+* http://www.cxyzjd.com/searchArticle?qc=全志f1c100s&page=1  
+http://www.cxyzjd.com/article/b7376811/109442307  
+https://blog.csdn.net/b7376811/article/details/109442307  
+* https://github.com/henrycoding/linux-52-f1c200s  
+https://www.cnx-software.com/2020/04/04/widora-tiny200-allwinner-f1c200s-arm9-development-board-support-dvp-camera-up-to-512mb-sd-nand-flash/  
+https://github.com/henrycoding/uboot-f1c100s  
+* ssd210, ssd201  
+A311D  
+* https://github.com/florpor/licheepi-nano  
+https://github.com/unframework/licheepi-nano-buildroot  
+https://www.seeedstudio.com/Sipeed-Lichee-Nano-Linux-Development-Board-16M-Flash-WiFi-Version-p-2893.html  
+https://www.licheepizero.us  
+* https://github.com/Icenowy/sunxi-tools  
+http://nano.lichee.pro/step_by_step/two_sunxi-tools.html  
+* https://github.com/LiShanwenGit/F1C100S-config  
+https://github.com/LiShanwenGit/MelonPI-MINI/tree/master/documents  
+* https://github.com/yilanjueding123/quanzhiwork  
+* https://blog.csdn.net/p1279030826/article/details/113370239  
+https://www.bilibili.com/read/cv9477324  
+https://gitee.com/LicheePiNano/F1C100S_MDKF1C100S添加SPI LCD液晶驱动  
+https://www.cnblogs.com/listenscience/p/13619930.html  
+全志F1C100S usb裸机驱动移植1  
+http://www.iipcb.com/blog/F1C100S_USB_DriverDebug1.html  
+* https://www.szc188.com/2021/06/25/f1c100s/【f1c100s】编译下载工具/  
+http://www.360doc.com/content/20/0930/02/71044033_938238986.shtml  
+新手玩荔枝派 f1c100s nano折腾笔记（四）  
+fbv  
+https://www.codeleading.com/article/66075573279/  
