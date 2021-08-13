@@ -119,3 +119,20 @@ https://jaycarlson.net/embedded-linux/
 
 ## F1C100S/F1C200S系统构建  
 https://littlevgl.readthedocs.io/en/latest/Doc/03.F1C100S_Linux/F1C100S_Linux.html  
+
+## ARM9/ARM11裸机开发笔记1之MDK开发环境和点亮LED  
+http://www.openedv.com/forum.php?mod=viewthread&tid=45055  
+
+## F1C100s with Keil RTX4 + emWin5  
+https://gitee.com/xuyao2020/F1C100s_with_Keil_RTX4_emWin5  
+用Keil开发ASM9128T，让你坐拥RTX+TCPnet+emWin中间件  
+https://www.amobbs.com/thread-5708471-1-1.html  
+福利来了：基于F1C100s完美运行RTX4+emWin  
+https://www.amobbs.com/thread-5731101-1-1.html  
+
+## f1c200s(tiny200) linux+emwin稳定运行  
+https://whycan.com/t_4739.html  
+https://github.com/xiaofengvskuye/f1c200s_emwin/blob/master/Sample/SimpleDemo/main.c  
+
+## 荔枝派Nano使用gcc-linaro-7.2.1进行交叉编译得到的可执行文件，一运行就"segmentation fault"  
+https://whycan.com/t_3265.html  
