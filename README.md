@@ -111,3 +111,4 @@ https://github.com/mangopi-sbc/buildroot-mangopi-r
 
 ## dfrobot, mangopi r3  
 https://wiki.dfrobot.com.cn/_SKU_DFR0780_MangoPi-R3#target_6  
+https://wiki.dfrobot.com/MangoPi_R3_SKU_DFR0780  
