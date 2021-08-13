@@ -196,3 +196,7 @@ http://www.360doc.com/content/20/0930/02/71044033_938238986.shtml
 新手玩荔枝派 f1c100s nano折腾笔记（四）  
 fbv  
 https://www.codeleading.com/article/66075573279/  
+
+## 横米游戏机SDK  
+https://github.com/jeason1997/MiyooSDK/tree/master/demo  
+https://github.com/jeason1997/MiyooSDK/blob/master/demo  
