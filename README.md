@@ -116,3 +116,6 @@ https://wiki.dfrobot.com/MangoPi_R3_SKU_DFR0780
 ## SO YOU WANT TO BUILD AN EMBEDDED LINUX SYSTEM?  
 ARM9开发板对比（英文）  
 https://jaycarlson.net/embedded-linux/  
+
+## F1C100S/F1C200S系统构建  
+https://littlevgl.readthedocs.io/en/latest/Doc/03.F1C100S_Linux/F1C100S_Linux.html  
