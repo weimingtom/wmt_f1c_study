@@ -112,3 +112,7 @@ https://github.com/mangopi-sbc/buildroot-mangopi-r
 ## dfrobot, mangopi r3  
 https://wiki.dfrobot.com.cn/_SKU_DFR0780_MangoPi-R3#target_6  
 https://wiki.dfrobot.com/MangoPi_R3_SKU_DFR0780  
+
+## SO YOU WANT TO BUILD AN EMBEDDED LINUX SYSTEM?  
+ARM9开发板对比（英文）  
+https://jaycarlson.net/embedded-linux/  
