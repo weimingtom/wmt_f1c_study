@@ -94,3 +94,6 @@ https://github.com/nminaylov/F1C100s_projects
 可能是因为nand flash的芯片型号不同，待考。屏幕是接屏线的，下方的排针其实是空出来，没有接到屏幕。  
 兼容800x480分辨率（我买的是这个分辨率），即可以忽略掉触摸功能和屏线，屏幕输出是不受影响的。  
 带有喇叭，在屏幕转接板的背面，可以拔掉线，或者用耳机来避免声音过大（当然一般情况下不会用到声音输出）  
+
+## 全志F1C200S F1C100S 介绍  
+https://blog.csdn.net/tunqimai9331/article/details/95938903  
