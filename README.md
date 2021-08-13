@@ -97,3 +97,7 @@ https://github.com/nminaylov/F1C100s_projects
 
 ## 全志F1C200S F1C100S 介绍  
 https://blog.csdn.net/tunqimai9331/article/details/95938903  
+
+## 关于荔枝派（LiChee Pi）Nano初体验中的114514个坑   
+https://www.stlee.tech/2020/06/25/关于荔枝派（LiChee%20Pi）Nano初体验中的114514个坑/
+https://github.com/Icenowy/linux/archive/f1c100s-480272lcd-test.zip
