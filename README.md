@@ -186,7 +186,8 @@ https://github.com/LiShanwenGit/MelonPI-MINI/tree/master/documents
 * https://github.com/yilanjueding123/quanzhiwork  
 * https://blog.csdn.net/p1279030826/article/details/113370239  
 https://www.bilibili.com/read/cv9477324  
-https://gitee.com/LicheePiNano/F1C100S_MDKF1C100S添加SPI LCD液晶驱动  
+https://gitee.com/LicheePiNano/F1C100S_MDK  
+F1C100S添加SPI LCD液晶驱动  
 https://www.cnblogs.com/listenscience/p/13619930.html  
 全志F1C100S usb裸机驱动移植1  
 http://www.iipcb.com/blog/F1C100S_USB_DriverDebug1.html  
