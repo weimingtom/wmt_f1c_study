@@ -104,3 +104,10 @@ https://github.com/Icenowy/linux/archive/f1c100s-480272lcd-test.zip
 
 ## 【荔枝派Nano】F1C100S的boothead和BROM, 哔哩哔哩专栏  
 https://www.bilibili.com/read/cv9477324/  
+
+## mangopi r3  
+https://mangopi.org/mangopi_r  
+https://github.com/mangopi-sbc/buildroot-mangopi-r  
+
+## dfrobot, mangopi r3  
+https://wiki.dfrobot.com.cn/_SKU_DFR0780_MangoPi-R3#target_6  
