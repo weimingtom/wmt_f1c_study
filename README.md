@@ -200,3 +200,9 @@ https://www.codeleading.com/article/66075573279/
 ## 横米游戏机SDK  
 https://github.com/jeason1997/MiyooSDK/tree/master/demo  
 https://github.com/jeason1997/MiyooSDK/blob/master/demo  
+
+## 关于芒果派R3无法插入屏线线头的问题    
+上次我买的dfrobot的f1c200s开发板芒果派r3，它的翻盖fpc连接器怎么放都放不进去屏线，  
+今天我解决了这个问题。其实很简单，买那种蓝色屏线头然后用延长板转接就行，放不进去是因为屏线不够硬，  
+那个插座要很用力才能放进去，如果屏线的线头不够硬，是没办法把屏线放进去芒果派r3的连接器中，  
+而蓝色端的的那种fpc延长线反倒可以  
