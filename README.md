@@ -24,6 +24,16 @@ int main()
 	return 0;
 }
 ```
+* 荔枝派Nano使用gcc-linaro-7.2.1进行交叉编译得到的可执行文件，一运行就"segmentation fault"  
+https://whycan.com/t_3265.html  
+建议用: arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2  
+https://sourcery.mentor.com/GNUToolchain/package12813/public/arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2  
+http://sources.buildroot.net/toolchain-external-codesourcery-arm/arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2  
+ubuntu18.04 x64需要安装32bit的依赖包:  
+sudo apt-get install lib32ncurses5 lib32z1 -y  
+一样问题，用晕哥说的  arm-2014.05-29-arm-none-linux-gnueabi 测试可以；  
+下了 arm-2014.05-29-arm-none-linux-gnueabi-i686-mingw32.tar.bz2  
+在windows下eclipse里编译app，放到板里能正常运行；  
 
 ## Flash Linux firmware, and copy file a.out to file system  
 * https://mangopi.org/f1c_flashrom  
@@ -62,9 +72,6 @@ FIXME: Only ddr running (program lost after resetting), not available for nand f
 ## f1c200s(tiny200) linux+emwin稳定运行  
 https://whycan.com/t_4739.html  
 https://github.com/xiaofengvskuye/f1c200s_emwin/blob/master/Sample/SimpleDemo/main.c  
-
-## 荔枝派Nano使用gcc-linaro-7.2.1进行交叉编译得到的可执行文件，一运行就"segmentation fault"  
-https://whycan.com/t_3265.html  
 
 ## rt-thread  
 https://github.com/vvhh2002/f1c100s_rt-thread  
