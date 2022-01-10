@@ -36,6 +36,7 @@ sudo apt-get install lib32ncurses5 lib32z1 -y
 一样问题，用晕哥说的  arm-2014.05-29-arm-none-linux-gnueabi 测试可以；  
 下了 arm-2014.05-29-arm-none-linux-gnueabi-i686-mingw32.tar.bz2  
 在windows下eclipse里编译app，放到板里能正常运行；  
+* https://elinux.org/ARMCompilers  
 
 ## Flash Linux firmware, and copy file a.out to file system  
 * https://mangopi.org/f1c_flashrom  
