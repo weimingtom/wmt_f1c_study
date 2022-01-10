@@ -24,6 +24,8 @@ int main()
 	return 0;
 }
 ```
+* search baidupan, arm-2014.05-29-arm-none-linux-gnueabi-i686-mingw32.tar.bz2  
+* search baidupan, arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2  
 * 荔枝派Nano使用gcc-linaro-7.2.1进行交叉编译得到的可执行文件，一运行就"segmentation fault"  
 https://whycan.com/t_3265.html  
 建议用: arm-2014.05-29-arm-none-linux-gnueabi-i686-pc-linux-gnu.tar.bz2  
