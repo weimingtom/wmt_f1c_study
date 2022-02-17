@@ -216,3 +216,16 @@ https://github.com/jeason1997/MiyooSDK/blob/master/demo
 今天我解决了这个问题。其实很简单，买那种蓝色屏线头然后用延长板转接就行，放不进去是因为屏线不够硬，  
 那个插座要很用力才能放进去，如果屏线的线头不够硬，是没办法把屏线放进去芒果派r3的连接器中，  
 而蓝色端的的那种fpc延长线反倒可以  
+
+## 尝试从一开发F1C100s应用 (使用lsz命令)    
+* https://whycan.com/t_4266.html  
+* lrzsz-0_12_20_tar.gz  
+* SecureCRT.zip  
+* (with shell) $ lrz (or linux rz, sz command)  
+* https://blog.csdn.net/mynamepg/article/details/81118580  
+* with buildroot  
+```
+Target packages  --->
+Networking applications  --->
+[v] lrzsz
+```
