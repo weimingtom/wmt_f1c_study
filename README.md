@@ -229,3 +229,6 @@ Target packages  --->
 Networking applications  --->
 [v] lrzsz
 ```
+
+## Planck-Pi, f1c200s  
+* https://github.com/peng-zhihui/Planck-Pi  
