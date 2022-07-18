@@ -84,6 +84,8 @@ https://whycan.com/p_33590.html
 
 ## F1C100s_projects  
 https://github.com/nminaylov/F1C100s_projects  
+https://github.com/nminaylov/F1C100s_LVGL  
+https://github.com/motoedy/minimal_f1c100s_fb_zlggui  
 
 ## f1c100s, nor flash, licheepi nano, 荔枝派nano  
 我把荔枝派nano，f1c100s nor flash版烧录过程跑通了。  
