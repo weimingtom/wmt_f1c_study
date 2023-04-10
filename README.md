@@ -83,9 +83,11 @@ https://github.com/VeiLiang/BoloRTT
 https://whycan.com/p_33590.html  
 
 ## F1C100s_projects  
-https://github.com/nminaylov/F1C100s_projects  
+* https://github.com/nminaylov/F1C100s_projects  
 https://github.com/nminaylov/F1C100s_LVGL  
 https://github.com/motoedy/minimal_f1c100s_fb_zlggui  
+* see, f1c200s lcd_test.bin  
+https://github.com/weimingtom/wmt_lvgl_study  
 
 ## f1c100s, nor flash, licheepi nano, 荔枝派nano  
 我把荔枝派nano，f1c100s nor flash版烧录过程跑通了。  
