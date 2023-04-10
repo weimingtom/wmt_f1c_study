@@ -82,7 +82,7 @@ https://github.com/vvhh2002/lv7_rtthread_f1c100s
 https://github.com/VeiLiang/BoloRTT  
 https://whycan.com/p_33590.html  
 
-## F1C100s_projects  
+## F1C100s_projects, 'u-boot, fatload mmc, go'  
 * https://github.com/nminaylov/F1C100s_projects  
 https://github.com/nminaylov/F1C100s_LVGL  
 https://github.com/motoedy/minimal_f1c100s_fb_zlggui  
