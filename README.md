@@ -107,6 +107,9 @@ https://github.com/motoedy/minimal_f1c100s_fb_zlggui
 兼容800x480分辨率（我买的是这个分辨率），即可以忽略掉触摸功能和屏线，屏幕输出是不受影响的。  
 带有喇叭，在屏幕转接板的背面，可以拔掉线，或者用耳机来避免声音过大（当然一般情况下不会用到声音输出）  
 
+## F1C200S, 小淘气    
+* search baidupan, F1C100S_keil开发文件  
+
 ## 全志F1C200S F1C100S 介绍  
 https://blog.csdn.net/tunqimai9331/article/details/95938903  
 
