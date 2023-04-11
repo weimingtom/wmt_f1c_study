@@ -112,6 +112,8 @@ https://github.com/weimingtom/wmt_lvgl_study
 
 ## F1C200S, 小淘气    
 * search baidupan, F1C100S_keil开发文件  
+* 有两个，较小的那个在这里：https://download.csdn.net/download/w343241644/16727273  
+* 较大的带LVGL  
 
 ## 全志F1C200S F1C100S 介绍  
 https://blog.csdn.net/tunqimai9331/article/details/95938903  
