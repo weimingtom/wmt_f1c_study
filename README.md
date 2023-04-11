@@ -251,3 +251,21 @@ Networking applications  --->
 
 ## qemu-f1c100s  
 * https://github.com/newluhux/qemu-f1c100s  
+
+## 以前的笔记  
+* 其实我星期天的时候在F1C200s开发板和4.3寸屏上跑通了网上高手（whycan）开源的无操作系统开发模板工程：F1C100s_with_Keil_RTX4_emWin5-spl-separated这个例子，只不过我只能在内存运行，不知道用何种方法烧录到nand flash上（就是重启会丢失）——其实这个例子是有版权问题的，首先这个工程可以用mdk4编译（需要加上--c99开关），而MDK4是付费的，而RTX4和emWin则是mdk4里面自带的软件，而RTX4需要另外付费（emwin是一个GUI库，可以依赖于RTX4，所以需要付费RTX才能使用）
+
+* 我购买了小淘气科技的F1C200s开发板（带nor和nand flash），没有买代码。这个板相当于荔枝派nano（UART0是调试输出），但也可以兼容芒果派r3（需要改接UART1，即PA2收PA3发，才能看到调试输出）。另外，虽然带有nand flash（通过跳帽来选择），但我试过无法运行芒果派r3的nand flash rom，可能是因为nand flash的芯片型号不同，待考。屏幕是接屏线的，下方的排针其实是空出来，没有接到屏幕。兼容800x480分辨率（我买的是这个分辨率），即可以忽略掉触摸功能和屏线，屏幕输出是不受影响的。带有喇叭，在屏幕转接板的背面，可以拔掉线，或者用耳机来避免声音过大（当然一般情况下不会用到声音输出）
+
+* 昨天试了一下，把f1c200s的u-boot的sd卡运行模式跑通了（fatload命令），不过nand flash的引导方法仍然没有头绪。fatload有个几个缺点，是要先保证tf卡是FAT文件系统，这个可能有点坑，因为可能会提示缺分区表（我是拿PSP2000去格式化TF卡），其次，需要先引导到u-boot，这里有个技巧，就是先按住BOOT按钮reset进入FEL，然后通过from-fel-to-dfu.bat进入DFU模式，而其实所谓的DFU模式就是U-BOOT，只不过会卡住等待，这时候在串口控制台按Ctrl+C中断即可回到U-BOOT命令行，然后通过fatload mmc 0:1 80000000 lcd_test.bin
+和go 80000000即可运行（参考nminaylov/F1C100s_projects），我更想知道能否用类似的方法引导nand flash的代码，如果可以的话就可以解决nand引导问题
+
+* 如果没用过芒果派r3之类的f1c200s，可能会觉得奇怪为什么很多人都是通过bare metal方式（无操作系统）去开发，那是因为它跑Linux内核的话会启动得很慢——有可能是因为通过nand 128MB去引导系统，文件系统也是nand flash，会导致写入速度过慢，从而导致busybox启动速度非常慢。当然还因为f1c本身性能比较低下，当然还有别厂的arm9处理器比这个还慢，如果换成v3s会快几倍，所以有一批人是专门研究v3s而不是研究f1c
+
+* 所以，我猜测有可能是因为toolchains.bootlin.com的linux和gcc的版本比较新，所以编译出来的a.out才可以正常运行？我测试的f1c200s widora linux版本也很高。当然也不排除是因为bootlin的armv5 gcc是基于buildroot来编译的，因为它的文件前缀就有buildroot字样 ?
+
+* 我试了一下，如果想在f1c200s的linux下运行hello，有一个相对简单的方法，就是下载toolchains.bootlin.com的armv5交叉工具链：armv5-eabi--glibc--stable-2020.08-1，然后直接gcc即可（也可以加上参数-mcpu=arm926ej-s，效果是一样的；工具链不支持windows），我试过树莓派和linaro的工具链即使加上-mcpu=arm926ej-s都不行。或者可以通过buildroot，未试验。
+
+* 我最近买了两块f1c200s的开发板（whycan论坛上经常出现的一个东西），分别是dfrobot和艾尔赛。dfrobot的版本（nand 120MB版）不带麦克风，需要自己烧录固件。而艾尔赛的版本是带固件带麦克风的。使用相同的固件。我惊奇地发现widora的固件支持模拟U盘，通过OTG口可以模拟出一个类似安卓设备的东西，然后可以写入和复制文件系统里面的文件，这样对于开发来说非常方便，因为可以直接把elf文件拷贝进去然后在串口命令行执行
+
+* 除了我之前说的芯灵思全志SIN-V3S可以录音以外（基于全志v3s），其实芒果派R3也可以（基于全志f1c200s），只不过找它的官网是找不到相关的信息，倒是在dfrobot的资料库中可以找到，可以通过一个命令行tinycap实现录音，而这个命令行是出自一个开源项目tinyalsa，可以在github上找到这个项目的源代码，通过buildroot编译进固件
