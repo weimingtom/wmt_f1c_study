@@ -273,3 +273,6 @@ Networking applications  --->
 ## EasyUSB  
 * https://github.com/VeiLiang/EasyUSB  
 * 创建一个易于使用和移植的usb驱动工程，支持一些常用的SOC芯片。目前支持的芯片列表：全志F1C100S, 全志V3s  
+
+## MyLibrary, gpio-f1c100s.h  
+* https://github.com/Saoskywalker/MyLibrary  
