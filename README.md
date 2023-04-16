@@ -286,3 +286,9 @@ Networking applications  --->
 ## xboot  
 * https://github.com/tongjinlv/my_xboot  
 * https://github.com/Vasili-Sk/xboot-f1c200s  
+
+## micropython_for_f1c100s  
+* https://github.com/Saoskywalker/micropython_for_f1c100s  
+
+## f1c100s-linux  
+* https://github.com/174high/f1c100s-linux  
