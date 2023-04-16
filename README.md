@@ -73,6 +73,7 @@ F1C100s_with_Keil_RTX4_emWin5_spl_v1.rar
 FIXME: Only ddr running (program lost after resetting), not available for nand flash  
 https://github.com/glorycoder/F1C100s_with_Keil_RTX4_emWin5  
 https://github.com/motoedy/RTX4-emWin-on-F1C100s  
+see https://github.com/nminaylov/F1C100s_LVGL  
 
 ## f1c200s(tiny200) linux+emwin稳定运行  
 https://whycan.com/t_4739.html  
