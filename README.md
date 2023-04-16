@@ -62,6 +62,7 @@ http://www.openedv.com/forum.php?mod=viewthread&tid=45055
 ## F1C100s_with_Keil_RTX4_emWin5  
 裸机工程： https://github.com/hongxuyao/F1C100s_with_Keil_RTX4_emWin5  
 https://gitee.com/xuyao2020/F1C100s_with_Keil_RTX4_emWin5  
+https://github.com/glorycoder/F1C100s_with_Keil_RTX4_emWin5  
 https://www.amobbs.com/thread-5708471-1-1.html  
 https://www.amobbs.com/thread-5731101-1-1.html  
 ```
