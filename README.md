@@ -1,6 +1,14 @@
 # wmt_f1c_study  
 My F1C200s and F1C100s study  
 
+## steward-fu/lichee-nano    
+* search baidupan, steward-fu_lichee-nano  
+* f1c100s_rt-thread.zip  
+* melis-master.zip  
+* sunxi-tools.7z  
+* etc...  
+* (where???, seems deleted) https://github.com/steward-fu/lichee-nano  
+
 ## 芒果派r3, dfrobot, uname -a  
 Linux mangopi-r3 5.4.92 #1 Tue May 11 10:39:00 CST 2021 armv5tejl GNU/Linux  
 search baidupan, sysimage-nand-120mb.zip (behide lcpi_factory.rar)  
