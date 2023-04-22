@@ -295,6 +295,9 @@ Networking applications  --->
 * https://github.com/xboot/xboot  
 * https://github.com/tongjinlv/my_xboot  
 * https://github.com/Vasili-Sk/xboot-f1c200s  
+* https://github.com/xboot/xboot/blob/master/src/arch/arm32/mach-f1c100s/start.S  
+* https://github.com/xboot/xboot/blob/master/src/arch/arm32/mach-f1c200s/README.md  
+* https://github.com/xboot/xboot/blob/master/src/arch/arm32/mach-f1c200s/start.S  
 
 ## micropython_for_f1c100s  
 * https://github.com/Saoskywalker/micropython_for_f1c100s  
