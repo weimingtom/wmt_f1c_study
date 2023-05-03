@@ -304,3 +304,6 @@ Networking applications  --->
 
 ## f1c100s-linux  
 * https://github.com/174high/f1c100s-linux  
+
+## suda-f1c100s  
+* https://github.com/suda-morris/suda-f1c100s/blob/master/docs/tutorials/tutorial-sd.md  
