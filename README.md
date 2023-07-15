@@ -7,7 +7,9 @@ My F1C200s and F1C100s study
 * melis-master.zip  
 * sunxi-tools.7z  
 * etc...  
-* (where???, seems deleted) https://github.com/steward-fu/lichee-nano  
+* (where???, seems deleted) https://github.com/steward-fu/lichee-nano
+* https://github.com/steward-fu/archives/releases?page=7
+* https://github.com/steward-fu/archives/releases/tag/lichee-nano  
 
 ## 芒果派r3, dfrobot, uname -a  
 Linux mangopi-r3 5.4.92 #1 Tue May 11 10:39:00 CST 2021 armv5tejl GNU/Linux  
