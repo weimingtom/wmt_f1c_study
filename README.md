@@ -256,7 +256,9 @@ Networking applications  --->
 
 ## Planck-Pi, f1c200s  
 * https://github.com/peng-zhihui/Planck-Pi
-* https://github.com/maker-community/Planck-Pi-IoT  
+* https://github.com/maker-community/Planck-Pi-IoT
+【自制Linux单板电脑】我复刻了稚晖君的Planck-Pi
+https://www.bilibili.com/video/BV1Fh4y127X7  
 
 ## 智能虚仪电子研发室, LVGL 8.0 port      
 * https://oshwhub.com/lg508612189/f1c200s-chuan-kou-ping-ban  
@@ -310,3 +312,6 @@ Networking applications  --->
 
 ## suda-f1c100s  
 * https://github.com/suda-morris/suda-f1c100s/blob/master/docs/tutorials/tutorial-sd.md  
+
+## 【自制】圆梦Linux小电脑, f1c200s  
+* https://www.bilibili.com/video/BV1nN411S7BC
