@@ -315,3 +315,7 @@ https://www.bilibili.com/video/BV1Fh4y127X7
 
 ## 【自制】圆梦Linux小电脑, f1c200s  
 * https://www.bilibili.com/video/BV1nN411S7BC
+
+## 寒假制作了一个Linux小玩具, f1c200s    
+* https://www.bilibili.com/video/BV1sz4y127Xf
+* https://github.com/LiShanwenGit/MelonPI-MINI  
