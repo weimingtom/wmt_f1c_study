@@ -256,8 +256,8 @@ Networking applications  --->
 
 ## Planck-Pi, f1c200s  
 * https://github.com/peng-zhihui/Planck-Pi
-* https://github.com/maker-community/Planck-Pi-IoT
-【自制Linux单板电脑】我复刻了稚晖君的Planck-Pi
+* https://github.com/maker-community/Planck-Pi-IoT  
+【自制Linux单板电脑】我复刻了稚晖君的Planck-Pi  
 https://www.bilibili.com/video/BV1Fh4y127X7  
 
 ## 智能虚仪电子研发室, LVGL 8.0 port      
