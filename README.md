@@ -319,3 +319,8 @@ https://www.bilibili.com/video/BV1Fh4y127X7
 ## 寒假制作了一个Linux小玩具, f1c200s    
 * https://www.bilibili.com/video/BV1sz4y127Xf
 * https://github.com/LiShanwenGit/MelonPI-MINI  
+
+## (TODO) liulianpi, 榴莲派, f1c100s + nor spi flash  
+* search baidupan, LiuLianPi_F1C100S_Sch_V1.pdf  
+* 榴莲派编译手册.pdf  
+* linux.tar.gz  
