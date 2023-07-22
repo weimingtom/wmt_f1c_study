@@ -255,7 +255,8 @@ Networking applications  --->
 ```
 
 ## Planck-Pi, f1c200s  
-* https://github.com/peng-zhihui/Planck-Pi  
+* https://github.com/peng-zhihui/Planck-Pi
+* https://github.com/maker-community/Planck-Pi-IoT  
 
 ## 智能虚仪电子研发室, LVGL 8.0 port      
 * https://oshwhub.com/lg508612189/f1c200s-chuan-kou-ping-ban  
