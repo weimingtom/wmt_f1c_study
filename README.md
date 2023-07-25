@@ -314,7 +314,10 @@ https://www.bilibili.com/video/BV1Fh4y127X7
 * https://github.com/suda-morris/suda-f1c100s/blob/master/docs/tutorials/tutorial-sd.md  
 
 ## 【自制】圆梦Linux小电脑, f1c200s  
-* https://www.bilibili.com/video/BV1nN411S7BC
+* https://www.bilibili.com/video/BV1nN411S7BC  
+* https://github.com/xddcore/Zero_Linux_Board  
+* 【自制|开源】小白也可以轻松复现的Linux小电脑  
+* https://www.bilibili.com/video/BV17u411V7ws  
 
 ## 寒假制作了一个Linux小玩具, f1c200s    
 * https://www.bilibili.com/video/BV1sz4y127Xf
