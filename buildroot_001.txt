@@ -1,0 +1,216 @@
+https://www.cnblogs.com/xingboy/p/17029779.html
+
+博客园首页新随笔联系管理订阅订阅随笔- 225  文章- 0  评论- 61  阅读- 88万 
+基于 Linux 的 Buildroot 制作根文件系统 -- rootfs
+参考：https://blog.csdn.net/qq_39721016/article/details/123876398 、https://www.jianshu.com/p/a461adda7a43 仅供参考学习使用　　
+
+　　要构建自己的开发板，首先要创建一个基本的 buildroot配置作为开发板的基本编译系统，它編譯出來的系統是屬於一種根文件系統，并不是Debian。这里包括toolchain，kernel，bootloader，filesystem 和一个简单的 busy-box 用户空间。不要选择特别的配置，这个配置必须要足够小，并仅仅作为目标平台一个基本的 BusyBox 系统。
+1.需要条件
+　　开发环境：Ubuntu16.04
+　　开发平台：f1c100s
+
+2.安装交叉编译链
+　　1.新建文件夹：mkdir toolchain 并进入：cd toolchain
+
+　　2.下载编译链：wget https://releases.linaro.org/components/toolchain/binaries/7.2-2017.11/arm-linux-gnueabi/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi.tar.xz
+
+　　说明：如果有的对应的交叉编译器压缩包，自行拷贝到对应的目录下解压即可。
+
+　　3.解压 ：xz -d file.tar.xz 再次解压： tar -xvf file.tar
+
+　　4.拷贝到对应的目录下（我这里放到了/usr/local/arm-gcc/，可以根据自己选择路径，等会需要用到）
+
+　　5.打开.bashrc：vim ~/.bashrc 添加编译链的bin文件路径 ( 类似windows下的添加环境变量 ):
+　　在文件末尾 添加以下内容
+
+PATH="$PATH:/usr/local/arm-gcc/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/bin/"
+　　然后保存退出，最后更新环境变量：source ~/.bashrc
+
+3.下载Buildroot代码包
+　　在 https://buildroot.org/download.html 链接可以下载到最新的代码包（网页打开很慢，除非能…好了你懂的，《Over the wall》）。
+
+4.开始buildroot 制作根文件系统
+　　拷贝下载好的buildroot-2021.02.6.tar.gz 压缩包到ubuntu中，解压并进入buildroot-2021.02.6目录中（建议新建一个目录）。
+
+mkdir make_rootfs
+tar -xzvf buildroot-2021.02.6.tar.gz 
+cd buildroot-2021.02.6
+5.配置文件系统 menuconfig
+　　1)进入图形化配置界面
+
+make menuconfig
+　　
+
+　　5.1.Target options —> 配置说明
+　　　　1）由于我们使用的是f1c100s，CPU架构是ARM9的，所以需要更改配置内容，如下：
+
+　　　　　　
+
+　　　　Target options：目标板的配置
+
+　　Target Architecture：目标架构，这里选择 ARM(little endian)，ARM小端模式
+　　Target Binary Format：二进制格式，为 ELF
+　　Target Architecture Variant：内核类型
+　　Target ABI：应用程序二进制接口，为EABI
+　　Floating point strategy：浮点数的策略
+　　ARM instruction set：arm 汇编指令集，选择 ARM
+　　5.2.Build options —> 配置说明
+　　　　生成选项：根据自己的实际情况选择，主要是一些编译时用到的选项,比如dl的路径,下载代码包使用的路径,同时运行多个编译的上限,是否使能编译器缓冲区等等,这里按照默认就行了.
+
+　　　　
+
+　　5.3.Toolchain —> 配置说明
+　　　　编译工具链选择：这个需要根据自己的实际情况修改。在这里总共修改了9个地方。
+
+　　　　
+
+ 　　　　1)Toolchain type () —>
+　　　　默认是 Buildroot toolchain（内部工具链），这里我们选择 External toolchain（外部工具链），因为后续要选择你的交叉编译器。
+
+　　　　　
+
+　　　　2)Toolchain () —>
+
+　　　　选择自定义工具链
+
+　　　　
+
+ 　　　　3)Toolchain origin () —>
+　　　　选择工具链来源，默认就是选择 Pre-installed toolchain （预装工具链）
+
+　　　　　　
+
+　　　　4)Toolchain path ()
+
+　　　　交叉编译工具链路径
+　　　　找到自己的交叉编译工具链的路径填写进去,上面安装交叉编译链的时候，已经知道路径了：/usr/local/arm-gcc/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi 
+
+      注意：平時配置交叉編譯器路徑 PATH 的時候會有 ‘/bin’ 這裏的路徑就不需要添加 '/bin' 部分
+　　　　　　　
+
+　　　　5）($(ARCH)-linux) Toolchain prefix ()
+
+　　　　配置交叉编译工具链前缀
+
+　　　　
+
+ 　　　　我的交叉编译工具链是：arm-linux-gnueabi 所以我们填写为：$(ARCH)-linux-gnueabi，或者直接填 arm-linux-gnueabi
+
+　　　　6)External toolchain gcc version () —>
+　　　　选择外部交叉编译工具链版本
+
+arm-linux-gnueabi-gcc -v  //查看交叉编译链版本信息，交叉编译链前缀-gcc -v
+　　　　
+
+ 　　　　　
+
+　　　　7)External toolchain kernel headers series () —>
+
+　　　　外部工具链内核头系列,在这里我们进入交叉编译工具链目录，查找版本信息文件,
+
+　　　　路径在我们刚才安装交叉编译工具链的地方：
+
+vim /usr/local/arm-gcc/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabi/arm-linux-gnueabi/libc/usr/include/linux/version.h
+　　　　
+
+ 　　　　将 264707 转换为16进制是40A03，对于10进制来说就是4.10.3
+
+　　　　
+
+ 　　　　在这里我们选择4.10.X
+
+　　　　
+
+　　　　8)External toolchain C library () —>
+
+　　　　外部工具链C库
+
+　　　　
+
+ 　　　　9)工具链支持C++ 选项
+
+ 　　　　
+
+　　5.4.System configuration —> 配置说明
+　　　　系统配置：这个需要根据自己的实际情况修改。在这里我修改了5个地方。
+
+ 　　　　 
+
+ 　　　　1)修改系统主机名
+
+　　　　
+
+ 　　　　2)修改登录提示语
+
+　　　　
+
+ 　　　　3)修改设备挂载方式
+
+　　　　　　　
+
+　　　　4)修改登录密码
+
+　　　　注意：默认登录账户名为 root
+
+　　　　
+
+ 　　　　5）修改系统登录串口号
+
+　　　　
+
+ 　　　　TTY port 在这里修改为自己开发板的系统登录串口号
+
+　　　　
+
+ 　　　　Baudrate 修改串口波特率
+
+　　　　
+
+　　5.5.Kernel —> 配置说明
+　　　　内核配置：我们不需要在这里编译内核，在这里我们取消选中
+
+　　　　
+
+　　　　
+
+　　5.6.Target packages —> 配置说明
+　　目标包：文件系统程序包和库文件安装包，这个需要根据自己的实际情况修改(可以选一下SSH之类的安装包安装在系统里)，在这里我直接使用默认配置。
+
+　　包管理;文件系统通常要包含很多第三方软件，通过该配置，自动从指定的服务器上下载源码包,自动编译,自动搭建。
+　　
+
+　　
+
+ 　　
+
+ 　　
+
+　　5.7.Filesystem images —> 配置说明
+　　文件系统镜像：在这里我直接使用默认配置
+
+ 　　
+
+　　5.8.Bootloaders —> 配置说明
+　　系统引导程序：
+
+　　
+
+ 　　我们不需要在这里编译u-boot，我们取消选中u-boot。
+
+ 　　
+
+ 　　其他不管。
+
+6.确认并且保存配置
+　　
+
+7.编译
+　　1）执行编译命令： make　。
+
+　　2）开始编译，第一次编译会自动去下载确实的dl文件，整个过程需要一些时间。
+
+　　3）经过编译在 buildroot-2019.02.2/output/images 会生成 rootfs.tar 文件，至此，Buildroot编译完成
+
+ 
+
+本文来自博客园，作者：白菜没我白，转载请注明原文链接：https://www.cnblogs.com/xingboy/p/17029779.html
