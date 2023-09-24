@@ -327,3 +327,7 @@ https://www.bilibili.com/video/BV1Fh4y127X7
 * search baidupan, LiuLianPi_F1C100S_Sch_V1.pdf  
 * 榴莲派编译手册.pdf  
 * linux.tar.gz  
+
+## 基于 Linux 的 Buildroot 制作根文件系统 -- rootfs  
+* https://www.cnblogs.com/xingboy/p/17029779.html  
+
