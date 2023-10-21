@@ -365,3 +365,7 @@ licheenano_480_ubuntu140432_v3_g++_ipc.tar.gz
 fb-test  
 榴莲派f1c100s编译运行linux 5版固件（编译自aodzip buildroot版），fb-test运行效果如下。这个固件和Linux 4版的区别有这些：（1）编译Python更花时间，如果单独编译u-boot和linux更快（2）toolchain->rootfs->u-boot->linux->pack（3）make sipeed_lichee_nano_defconfig默认配置（4）一次就编译出三种ROM，sdcard/nand/nor，显示屏分辨率480272（5）rootfs加了比较多的东西，例如gdbserver, fbtest, tinyplay  
 sysimage-nor_480_272_aodzip_nano.img  
+
+## f1c100s, gitee  
+* https://gitee.com/LicheePiNano/lv7_rtthread_f1c100s  
+* https://gitee.com/LicheePiNano/F1C100S_MDK/blob/master/SRC/main.c  
