@@ -375,8 +375,8 @@ sysimage-nor_480_272_aodzip_nano.img
 * https://gitee.com/cai_xl/F1C100S_examples  
 
 ## 全志F1C100s使用记录：u-boot & linux & rootfs 编译与烧录测试（基于SD卡）  
-https://blog.csdn.net/Naisu_kun/article/details/123142958  
-https://www.codetd.com/article/14276740  
-https://www.codeleading.com/article/46302421939/  
-https://github.com/peng-zhihui/Planck-Pi  
-https://cn.bing.com/search?q=f1c100s&qs=n&%eManage%20Your%20Search%20History%E=&sp=-1&lq=0&pq=f1c100s&sc=10-7&sk=&cvid=CE46B0FE6F0140049EA4561C8A9FD869&ghsh=0&ghacc=0&ghpl=&FPIG=5BC14238C15F4204BF4472E30E1DB01A&first=39&FORM=PORE  
+* https://blog.csdn.net/Naisu_kun/article/details/123142958  
+* https://www.codetd.com/article/14276740  
+* https://www.codeleading.com/article/46302421939/  
+* https://github.com/peng-zhihui/Planck-Pi  
+* search bing : f1c100s  
