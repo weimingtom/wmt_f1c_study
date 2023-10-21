@@ -332,3 +332,36 @@ https://www.bilibili.com/video/BV1Fh4y127X7
 ## 基于 Linux 的 Buildroot 制作根文件系统 -- rootfs  
 * https://www.cnblogs.com/xingboy/p/17029779.html  
 
+## 榴莲派固件编译
+* 编译榴莲派Linux 5失败，但Linux 4成功  
+Linux4版nor flash：  
+flashimg_nano_480_272_linux_4.15.0-rc8_uclibc.bin  
+出厂固件nor flash：  
+liulianpi_factory_20231013.7z  
+编译步骤，Linux 4.15.0： https://github.com/Icenowy/linux.git；https://github.com/Icenowy/linux/tree/f1c100s-480272lcd-test  
+https://whycan.com/t_3138_2.html  
+suda-f1c100s linux 5  
+https://gitee.com/forsun/suda-f1c100s/blob/master/docs/tutorials/tutorial-spiflash.md  
+suda-f1c100s linux 4  
+https://gitee.com/qq1847123212/SUDA_F1C100S/tree/master/kernel
+```
+原来如此，可能是这样子，荔枝派nano官方是Linux 4，但Mangopi r3和r2（tiny200）是Linux 5（而且是嵌入到buildroot中），我之前没想起来是因为Mangopi r3是nand flash，只有tiny200是nor flash
+除了Tiny200是Linux 5（似乎，基于buildroot编译），还有一个文档化更详细的，叫suda-f1c100s，也是Linux 5版的f1c100s，我觉得可以试试。之前编译榴莲派提供的Linux 5代码但运行失败，但如果编译Linux 4则可以，我想试试其他方法。还有一些人是基于sdcard的，如Planck-Pi，暂时不研究
+```
+* f1c lvgl编译运行
+在榴莲派f1c100s上运行lvgl_demo (v7)和图片背景的lvgl，效果如下。我测试过只能通过buildroot的交叉工具链编译或者用arm-none-linux工具链静态链接（动态不行，需要加上-mcpu=arm926ej-s -mfloat-abi=soft开关），才可能运行成功，用编译Linux的工具链反而不行 。通过tf卡传入elf文件，并且扩展文件系统  
+lvgl_demo_nor_flash_uclibc  
+简单，用buildroot生成的工具链编译：  
+lv_port_linux_frame_buffer_f1c_480_br_uclibc_v1.tar.gz  
+静态链接才可运行：  
+lv_port_linux_frame_buffer_f1c_480_none_v1.tar.gz  
+buildroot带图片版：  
+lv_port_linux_frame_buffer_f1c_480_image_br_uclibc_v1.tar.gz  
+* (480 g++ ipc)    
+用榴莲派f1c100s运行qt4示例digitalclock和nes模拟器(infones)，静态链接版，大概15M，Linux 4版系统固件，效果如下。用ubuntu14 32位编译，需要打开buildroot的工具链的c++和wchar配置开关，并且打开Linux 4内核的system v ipc配置开关。由于静态链接elf文件和字体文件太大了，塞不进nor flash内，我这里是用tf卡执行（字体则使用软连接）。nes模拟器帧率低于d1s和树莓派zero  
+licheenano_480_ubuntu140432_v3_g++_ipc.tar.gz  
+里面的qt4nes  
+* 榴莲派f1c100s Linux 5版  
+fb-test  
+榴莲派f1c100s编译运行linux 5版固件（编译自aodzip buildroot版），fb-test运行效果如下。这个固件和Linux 4版的区别有这些：（1）编译Python更花时间，如果单独编译u-boot和linux更快（2）toolchain->rootfs->u-boot->linux->pack（3）make sipeed_lichee_nano_defconfig默认配置（4）一次就编译出三种ROM，sdcard/nand/nor，显示屏分辨率480272（5）rootfs加了比较多的东西，例如gdbserver, fbtest, tinyplay  
+sysimage-nor_480_272_aodzip_nano.img  
