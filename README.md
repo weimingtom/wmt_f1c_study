@@ -380,3 +380,6 @@ sysimage-nor_480_272_aodzip_nano.img
 * https://www.codeleading.com/article/46302421939/  
 * https://github.com/peng-zhihui/Planck-Pi  
 * search bing : f1c100s  
+
+## f1c100s-gpio-tools  
+* https://github.com/wuxx/f1c100s-gpio-tools  
