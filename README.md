@@ -388,3 +388,6 @@ sysimage-nor_480_272_aodzip_nano.img
 * https://github.com/TriForceX/MiyooCFW
 * (TODO, TODO) 待研究，目前q8的两个自制tf卡固件都可以在Sup M3上拿到串口控制台登录（虽然按键不适配），
 但测试过无法在榴莲派等f1c100s开发板上运行，所以可能需要研究怎么编译这个固件让其可以运行在开发板上  
+* q8_od_jutleys_no_roms.img.7z and q8_od_jckl_no_roms.img.7z    
+see https://github.com/steward-fu/archives/releases?q=q8&expanded=true  
+* https://steward-fu.github.io/website/handheld.htm#q8  
