@@ -396,4 +396,5 @@ sysimage-nor_480_272_aodzip_nano.img
 see https://github.com/steward-fu/website/releases?q=q8&expanded=true  
 * https://steward-fu.github.io/website/handheld.htm#q8  
 * How to run MiyooCFW on Sup M3, see  
-https://github.com/weimingtom/q90_playground  
+https://github.com/weimingtom/q90_playground
+* Sup M3, 2.8inch (3inch?), 320x240, 24pin ???  
