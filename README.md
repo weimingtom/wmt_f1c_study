@@ -60,7 +60,7 @@ sudo apt-get install lib32ncurses5 lib32z1 -y
 * Copy elf file (a.out) to storage driver (mangopi-r3), copy to /root  
 * Connect board's USB TTL to PC, use putty to get tty console.   
 * chmod +x a.out && ./a.out
-* **NOTE: Using zadig to install Allwinner FEL Device and DFU Device will break PhoenixSuit firmware burn function, sometime you need to uninstall it if not used**  
+* **NOTE: Using zadig to install Allwinner FEL Device and DFU Device will break PhoenixSuit firmware burn function, sometimes you need to uninstall it if not used**  
 * **注意注意：安装FEL和DFU可能会导致PhoenixSuit无法使用（看不到进度条从而无法烧录），如果出现这种情况需要卸载USB驱动后再使用PhoenixSuit**  
 
 ## 【荔枝派Nano】F1C100S的串口  
