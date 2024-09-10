@@ -397,4 +397,21 @@ see https://github.com/steward-fu/website/releases?q=q8&expanded=true
 * https://steward-fu.github.io/website/handheld.htm#q8  
 * How to run MiyooCFW on Sup M3, see  
 https://github.com/weimingtom/q90_playground
+```
+sup m3, MiyooCFW-2.0.0-Beta-7fc5140.zip, musl
+隔了好几个月，我终于摸索出怎么在sup m3上正确配置运行MiyooCFW的方法。
+其实很简单，就是要多修改options.cfg这个文件才行。
+（1）首先要穷举console.cfg中的CONSOLE_VARIANT值，
+我选择了CONSOLE_VARIANT=m3_r61520（参考firstboot文件），
+可以显示（为了跳过安装程序，需要把firstboot改名，例如firstboot.skip），
+但屏幕还是会反色
+（2）如何解决反色问题呢，答案在firstboot里，
+firstboot里面提到一个配置文件options.cfg，
+这个文件不容易找到是因为需要tf卡通过掌机去连PC，
+而不是通过读卡器连PC，这样就可以看到main盘符，
+然后修改里面options.cfg的配置INVERT=0，
+然后重启即可得到正常颜色的MiyooCFW
+（3）由于sup m3的按键不太适应MiyooCFW，
+所以只能勉强用，但framebuffer应该正常了
+```
 * Sup M3, 2.8inch (3inch?), 320x240, 24pin ???  
